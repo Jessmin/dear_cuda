@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.9 FATAL_ERROR)
+project(sum_arrays CXX C CUDA)
+set(CMAKE_CUDA_FLAGS "-arch=compute_35 -g -G -O3")
+include_directories(../include)
+add_executable(sum_arrays sum_arrays.cu)
